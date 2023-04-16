@@ -1,0 +1,93 @@
+﻿*
+{
+    font-family: Bahnschrift;
+    font-size: 16px;
+    text-align: center;
+}
+
+html
+{
+    background-color: #2C2C2C;
+    color: floralwhite;
+}
+
+input
+{
+    text-align: left;
+}
+
+#FileUpload1, #FileUpload2, #TextBox1
+{
+    margin-bottom: 5px;
+}
+
+#Label1, #Label2, #Label3, #Label4, #Label5, #Label6
+{
+    font-size: 20px;
+}
+
+#Button1, #Button2
+{
+    background-color: #2C2C2C;
+    color: floralwhite;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#Table1, #Table2, #Table3, #Table4, #Table5
+{
+    margin: auto;
+    text-align: center;
+    border-radius: 20px;
+    overflow: hidden;
+    border-collapse: separate;
+}
+
+#Table1, #Table3, #Table4, #Table5
+{
+    margin-bottom: 15px;
+}
+
+.content
+{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.first-half, .second-half
+{
+    width: 50%;
+}
+
+.first-inputs-container, .second-inputs-container
+{
+    width: 100%;
+    height: 112px;
+}
+
+.first-inputs, .second-inputs
+{
+    width: 20%;
+    padding: 15px;
+    border: 5px solid #181818;
+    border-radius: 20px;
+    margin: auto;
+    background-color: #414141;
+}
+
+.first-outputs, .second-outputs 
+{
+    padding: 15px;
+    border: 5px solid #181818;
+    border-radius: 20px;
+    margin: 30px 5px 0px 5px;
+    background-color: #414141;
+}
+
+.first-half, .second-half, .first-inputs, .second-inputs
+{
+    display: flex;
+    flex-direction: column;
+}
