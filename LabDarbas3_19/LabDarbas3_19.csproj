@@ -68,9 +68,20 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Form.aspx" />
+    <Content Include="Style.css" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Class\Form.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Class\GeneralProductInfo.cs" />
+    <Compile Include="Class\InOutUtils.cs" />
+    <Compile Include="Class\ITableGeneric.cs" />
+    <Compile Include="Class\LinkList.cs" />
+    <Compile Include="Class\Shop.cs" />
+    <Compile Include="Class\ShopProductInfo.cs" />
+    <Compile Include="Class\TaskUtils.cs" />
     <Compile Include="Form.aspx.cs">
       <DependentUpon>Form.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -91,7 +102,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Class\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
