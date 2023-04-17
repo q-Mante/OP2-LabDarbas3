@@ -4,8 +4,16 @@ using System.IO;
 
 namespace LabDarbas3_19.Class
 {
+    /// <summary>
+    /// A utility class for handling input/output operations related to product and shop information.
+    /// </summary>
     public class InOutUtils
     {
+        /// <summary>
+        /// Reads product information from a file and returns a linked list of GeneralProductInfo objects.
+        /// </summary>
+        /// <param name="fileName">The name of the file to read from.</param>
+        /// <returns>A linked list of GeneralProductInfo objects.</returns>
         public static LinkList<GeneralProductInfo> ReadInformations(string fileName)
         {
             using (var reader = new StreamReader(fileName))
@@ -28,6 +36,13 @@ namespace LabDarbas3_19.Class
             }
         }
 
+        /// <summary>
+        /// Reads shop information from a file and returns a linked list of Shop objects, using the provided
+        /// linked list of GeneralProductInfo objects to associate product information with each shop.
+        /// </summary>
+        /// <param name="fileName">The name of the file to read from.</param>
+        /// <param name="linkedInformations">A linked list of GeneralProductInfo objects to use for product information.</param>
+        /// <returns>A linked list of Shop objects.</returns>
         public static LinkList<Shop> ReadShops(string fileName, LinkList<GeneralProductInfo> linkedInformations)
         {
             using (var reader = new StreamReader(fileName))
@@ -68,6 +83,21 @@ namespace LabDarbas3_19.Class
             }
         }
 
+        /// <summary>
+        /// Prints a formatted table of the specified list to a file, along with a title and header row.
+        /// </summary>
+        /// <typeparam name="T">The type of object in the list, which must implement several interfaces for formatting.</typeparam>
+        /// <param name="fileName">The name of the file to write to.</param>
+        /// <param name="title">The title to display above the table.</param>
+        /// <param name="list">The list of objects to print.</param>
+        /// <param name="format">An optional format string to use for formatting each object's data.</param>
+        /// <remarks>
+        /// <para>
+        /// The type parameter <typeparamref name="T"/> must implement the following interfaces: <see cref="IComparable{T}"/>,
+        /// <see cref="IEquatable{T}"/>, <see cref="IFormattable"/>, <see cref="ITableGeneric"/>, and <see cref="new"/>. This is necessary
+        /// for formatting and displaying each object's data in the table.
+        /// </para>
+        /// </remarks>
         public static void Print<T>(string fileName, string title, IEnumerable<T> list, string format = null) where T : IComparable<T>, IEquatable<T>, IFormattable, ITableGeneric, new()
         {
             using (var writer = new StreamWriter(fileName, true))

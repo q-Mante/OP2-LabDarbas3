@@ -3,8 +3,16 @@ using System.Web.UI.WebControls;
 
 namespace LabDarbas3_19
 {
+    /// <summary>
+    /// Represents a web form with methods to add table rows and load session data into tables.
+    /// </summary>
     public partial class Form : System.Web.UI.Page
     {
+        /// <summary>
+        /// Adds a header row to a table with the specified cell headers.
+        /// </summary>
+        /// <param name="table">The table to add the row to.</param>
+        /// <param name="cellsHeaders">The header text for each cell in the row.</param>
         protected void AddTableHeaderRow(Table table, params string[] cellsHeaders)
         {
             TableHeaderRow hRow = new TableHeaderRow();
@@ -16,6 +24,11 @@ namespace LabDarbas3_19
             table.Rows.Add(hRow);
         }
 
+        /// <summary>
+        /// Adds a row to a table with the specified cell text.
+        /// </summary>
+        /// <param name="table">The table to add the row to.</param>
+        /// <param name="cells">The text for each cell in the row.</param>
         protected void AddTableRow(Table table, params string[] cells)
         {
             TableHeaderRow row = new TableHeaderRow();
@@ -27,6 +40,9 @@ namespace LabDarbas3_19
             table.Rows.Add(row);
         }
 
+        /// <summary>
+        /// Loads session data into tables on the web form.
+        /// </summary>
         protected void SessionLoad()
         {
             if (Session["Table1"] != null)
@@ -111,15 +127,6 @@ namespace LabDarbas3_19
             if (Session["Shop"] != null)
             {
                 Shop shop = (Shop)Session["Shop"];
-
-                if (shop.Name != null)
-                {
-                    //Label7.Text = shop.Name;
-                }
-                else
-                {
-                    //Label7.Text = "nėra";
-                }
             }
 
             if (Session["Table5"] != null)

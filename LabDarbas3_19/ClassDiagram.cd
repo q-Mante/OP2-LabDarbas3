@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="LabDarbas3_19.Class.GeneralProductInfo" BaseTypeListCollapsed="true">
+    <Position X="2" Y="3.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAAQAAAAQEgAAAAAQAAAAAAIAAAAAgAAAAAiA=</HashCode>
+      <FileName>Class\GeneralProductInfo.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="LabDarbas3_19.Class.InOutUtils">
+    <Position X="7.5" Y="5.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAIAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAA=</HashCode>
+      <FileName>Class\InOutUtils.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LabDarbas3_19.Class.LinkList&lt;T&gt;" BaseTypeListCollapsed="true">
+    <Position X="2" Y="7.5" Width="2.25" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Class Name="LabDarbas3_19.Class.LinkList&lt;T&gt;.Node&lt;T&gt;">
+        <TypeIdentifier>
+          <NewMemberFileName>Class\LinkList.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAAAJAQAAAQBAQAAAAIAAAEAAACAABQIAA=</HashCode>
+      <FileName>Class\LinkList.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="LabDarbas3_19.Class.Shop" BaseTypeListCollapsed="true">
+    <Position X="4.75" Y="8.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>hAQAAABAAAAAQBQEhAAAAAQAAAAAgIAEAAAgAAAAAiA=</HashCode>
+      <FileName>Class\Shop.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="LabDarbas3_19.Class.ShopProductInfo" BaseTypeListCollapsed="true">
+    <Position X="4.75" Y="3.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>BAAEAAAAAAAAAgQEgAAQABQAgAAAQIAAAAAAAAAAAiA=</HashCode>
+      <FileName>Class\ShopProductInfo.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="LabDarbas3_19.Class.TaskUtils">
+    <Position X="7.5" Y="3.5" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAIAAAAAQAAAAAAAABAAAACAAAAAAAAAAA=</HashCode>
+      <FileName>Class\TaskUtils.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LabDarbas3_19.Form">
+    <Position X="7.5" Y="7.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAACAIABEAAAAAAAAAAgQBgAIAAQ4AAAAAAIAAYAAAA=</HashCode>
+      <FileName>Class\Form.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="LabDarbas3_19.Class.ITableGeneric">
+    <Position X="2" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Class\ITableGeneric.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

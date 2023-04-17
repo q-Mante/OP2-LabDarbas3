@@ -113,14 +113,6 @@ namespace LabDarbas3_19
                         File.AppendAllText(fileResultPath, "Duomenų nėra.\n\n");
                     }
                 }
-                else
-                {
-                    // Change label text atribute to indicate that there are error with uploaded files
-                }
-            }
-            else
-            {
-                // Change label text atribute to indicate that there are error with uploaded files
             }
         }
 
