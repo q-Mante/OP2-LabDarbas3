@@ -56,6 +56,7 @@ namespace LabDarbas3_19.Class
                     if (linkedShops.Contains(requiredShop))
                     {
                         linkedShops.Find(requiredShop).Data.ProductsAdd(product);
+                        linkedShops.Find(requiredShop).Data.ProductsSort();
                     }
                     else
                     {

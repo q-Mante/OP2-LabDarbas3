@@ -31,14 +31,12 @@ namespace LabDarbas3_19.Class
 
         private Node<T> Head;
         private Node<T> Tail;
-        private Node<T> Selected;
 
         public LinkList()
         {
             Count = 0;
             Head = null;
             Tail = null;
-            Selected = null;
         }
 
         public void Add(T value)
@@ -166,9 +164,9 @@ namespace LabDarbas3_19.Class
             for (Node<T> iterator1 = Head; iterator1 != null; iterator1 = iterator1.Link)
             {
                 var min = iterator1;
-                for (Node<T> iterator2 = Head; iterator2 != null; iterator2 = iterator2.Link)
+                for (Node<T> iterator2 = iterator1.Link; iterator2 != null; iterator2 = iterator2.Link)
                 {
-                    if (iterator2.Data.CompareTo(min.Data) > 0)
+                    if (iterator2.Data.CompareTo(min.Data) < 0)
                         min = iterator2;
                 }
                 (iterator1.Data, min.Data) = (min.Data, iterator1.Data);

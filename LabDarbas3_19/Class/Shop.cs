@@ -54,7 +54,7 @@ namespace LabDarbas3_19.Class
 
             foreach (ShopProductInfo info in shopProductInfos)
             {
-                float selectedRatio = info.Sold / (DateTime.Now - info.Arrived).Days;
+                float selectedRatio = info.Sold / ((DateTime.Now - info.Arrived).Days + 1);
                 if (selectedRatio > ratio)
                 {
                     favorite = info;
@@ -84,6 +84,8 @@ namespace LabDarbas3_19.Class
         public int ProductsCount() => shopProductInfos.Count;
 
         public void ProductsAdd(ShopProductInfo product) => shopProductInfos.Add(product);
+
+        public void ProductsSort() => shopProductInfos.Sort();
 
         public int CompareTo(Shop other)
         {
